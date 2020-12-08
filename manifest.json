@@ -1,0 +1,35 @@
+{
+    "name": "Smart Repair",
+    "short_name": "Smart-Repair",
+    "description": "Aplikasi Berbasis web dengan metode sistem pakar untuk mengecek kerusakan hp",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#fffde7",
+    "theme_color": "#fffde7",
+    "icons": [
+        {
+            "src": "img/icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "img/icon2.png",
+            "sizes": "384x384",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "img/icon3.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "img/icon4.png",
+            "sizes": "144x144",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}

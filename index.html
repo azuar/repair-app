@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Smart Repair</title>
+    <meta name="description" content="Photograpy App" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#00897B" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Manifest -->
+    <link rel="manifest" href="/manifest.json">
+
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sahitya&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigasi -->
+    <div class="navbar-fixed">
+        <nav class="grey darken-4" role="navigation">
+            <div class="nav-wrapper container">
+                <a href="index.html" class="brand-logo" id="logo-container">Smart_Repair</a>
+                <a href="#" class="sidenav-trigger" data-target="nav-mobile">☰</a>
+
+                <ul class="topnav right hide-on-med-and-down"></ul>
+                <ul class="sidenav" id="nav-mobile"></ul>
+            </div>
+        </nav>
+    </div>
+    <!-- Akhir Navigasi -->
+
+    <!-- Artikel -->
+    <div id="body-content"></div>
+    <!-- Akhir Artikel -->
+
+    <!-- Login Pop-up -->
+    <div id="login" class="modal ">
+        <h5 class="modal-close right"><a href="index.html">&#10005;</a></h5>
+        <div class="modal-content login center">
+            <h4 class="title-card">Login</h4>
+            <div class="row container" id="Contact">
+                <form class="col s12 center">
+                    <div class="row" id="form">
+                        <div class="input-field col s12">
+                            <input id="username" type="email" class="validate">
+                            <label for="username">Username</label>
+                        </div>
+                    </div>
+                    <div class="row" id="form">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                </form>
+                <button class="btn waves-effect waves-light btn-card right" type="submit" name="action">Login
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Pop-up -->
+    <div id="sign-up" class="modal">
+        <h5 class="modal-close right"><a href="index.html">&#10005;</a></h5>
+        <div class="modal-content register center">
+            <h4 class="title-card" id="register">Register</h4>
+            <div class="row" id="Contact">
+                <form class="col s12">
+                    <div class="row" id="form">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="phone" type="text" class="validate">
+                            <label for="phone">Telp</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="pas" type="password" class="validate">
+                            <label for="pas">Password</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="confirm-pas" type="password" class="validate">
+                            <label for="confirm-pas">Confirm Password</label>
+                        </div>
+                    </div>
+                    <button class="btn waves-effect waves-light btn-card right" type="submit" name="action">Register
+                        <i class="material-icons right">send</i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col l8 s12">
+                        <h4 class="white-text title-card">Smart Repair</h4>
+                        <p class="white-text text-lighten-4">Smart Repair merupakan sebuah website yang menerapkan
+                            sistem
+                            pakar di buat khusus untuk mengetahui kemungkinan2 keputusan yang harus dilakukan saat hp
+                            bermasalah. Karena saat ini dunia digital berkembang sangat pesat maka kami buatlah website
+                            ini
+                            untuk mempermudah para pengguna hp jika hpnya bermasalah menjadi tidak kebingungan sendiri.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Copyright - Smart_Repair
+            </div>
+        </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/modal.js"></script>
+    <script src="js/page-loads.js"></script>
+
+    <!-- REGISTER SERVICE WORKER -->
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker
+                    .register("js/sw.js")
+                    .then(function () {
+                        console.log("Pendaftaran ServiceWorker berhasil");
+                    })
+                    .catch(function () {
+                        console.log("Pendaftaran ServiceWorker gagal");
+                    });
+            });
+        } else {
+            console.log("ServiceWorker belum didukung browser ini.");
+        }
+    </script>
+    <!-- AKHIR REGISTER -->
+</body>
+
+</html>

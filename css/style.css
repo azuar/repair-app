@@ -1,0 +1,92 @@
+/* Navbar */
+.brand-logo{
+    font-family: 'Rowdies', cursive;
+    color: rgba(248, 197, 45, 1) !important;
+}
+.btn-nav {
+    background-color: rgba(248, 197, 45, 1);
+    color: black;
+    border-radius: 10px;
+    box-shadow: 3px 4px 4px 0  rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Title */
+.title-card{
+    font-family: 'Rowdies', cursive;
+}
+
+/* Jombotron */
+.jumbotron {
+    background-image: url(/img/jumbotron.png);
+    background-size: cover;
+    height: 670px;
+}
+
+/* card-content */
+.card-content {
+    font-family: 'Sahitya', serif;
+    margin-top: -30px;
+}
+.btn-card{
+    background-color: rgba(248, 197, 45, 1);
+    color: black;
+    margin-top: 10px;
+}
+.btn-back {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+#membership-form {
+    margin-top: 50px;
+}
+.member-card {
+    font-family: 'Sahitya', serif;
+    background-color: rgba(248, 197, 45, 1);
+    color: black;
+}
+label {
+    color: black !important;
+    font-size: 20px !important;
+    margin-top: -20px;
+}
+#signup {
+    margin-bottom: -80px;
+}
+.dash {
+    color: rgba(248, 197, 45, 1);
+    font-size: 100px;
+    margin-bottom: -20px;
+}
+
+/* Modal Pop-Up */
+.modal-close {
+    padding-right: 20px;
+}
+.login {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.register {
+    margin-top: 5px;
+}
+#register {
+    padding-bottom: 10px;
+}
+
+/* Footer */
+.footer-1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(48, 109, 166, 0.83);
+    color: white;
+}
+.footer-copyright{
+    background-color: rgba(48, 109, 166, 1);
+    padding: 20px;
+    font-family: 'Sahitya', serif;
+    color: white;
+}
+
+
+
+/* Desktop Version Only */
